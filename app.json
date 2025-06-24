@@ -3,6 +3,7 @@
     "name": "my-app",
     "slug": "my-app",
     "version": "1.0.0",
+    "sdkVersion": "53.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -24,6 +25,10 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "updates": {
+      "enabled": false,
+      "fallbackToCacheTimeout": 0
     }
   }
 }
