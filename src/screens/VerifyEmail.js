@@ -3,7 +3,7 @@ const VerifyEmail = () => {
     return (
         <View style={css.container}>
             <View style={css.img}>
-                <Image source={require('../assets/verfiy-email.png')} />
+                <Image source={require('../../assets/verify-email.png')} />
             </View>
 
             <View style={css.content}>

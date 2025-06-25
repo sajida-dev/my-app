@@ -1,11 +1,11 @@
 import { Alert, StyleSheet, Text, TouchableOpacity } from 'react-native'
 
-const CustomButton = ({ title }) => {
+const CustomButton = ({ onPress, title }) => {
     const verifyEmail = () => {
         Alert.alert('Verify Email.')
     }
     return (
-        <TouchableOpacity style={styles.btn} onPress={verifyEmail}>
+        <TouchableOpacity style={styles.btn} onPress={onPress}>
             <Text style={styles.content}>{title}</Text>
         </TouchableOpacity >
     )
