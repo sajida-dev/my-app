@@ -1,7 +1,7 @@
 import { View, Text, Image, StyleSheet, TouchableOpacity } from 'react-native'
 import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
-import Foundation from '@expo/vector-icons/Foundation';
-const ListItem = ({ profileImage, name, date, message, icon, count }) => {
+import Octicons from '@expo/vector-icons/Octicons';
+const FollowedListItem = ({ profileImage, name, date, message, icon, count }) => {
     return (
         <TouchableOpacity style={styles.listCard}>
             <Image source={profileImage} style={styles.profile} />
@@ -15,7 +15,7 @@ const ListItem = ({ profileImage, name, date, message, icon, count }) => {
                 <View style={styles.listData}>
                     {/* icon */}
                     {
-                        icon === 'image' ? <FontAwesome6 name="image" size={16} color="black" /> : <FontAwesome6 name="image" size={16} color="black" />
+                        icon === 'image' ? <FontAwesome6 name="image" size={16} color="black" /> : <Octicons name="video" size={18} color="black" />
                     }
 
                     {/* message */}
@@ -33,10 +33,11 @@ const styles = StyleSheet.create({
     listCard: {
         flexDirection: 'row',
         gap: 10,
-        // backgroundColor: 'rgb(191, 191, 191)',
         paddingVertical: 10,
         paddingHorizontal: 5,
-        // borderRadius: 20
+        alignItems: 'center',
+        justifyContent: ''
+
     },
     profile: {
         borderRadius: 50,
@@ -83,5 +84,5 @@ const styles = StyleSheet.create({
     }
 
 })
-export { ListItem }
+export { FollowedListItem }
 
