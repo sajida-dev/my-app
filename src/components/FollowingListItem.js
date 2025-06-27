@@ -9,7 +9,7 @@ const FollowingListItem = ({ profileImage, name, date, message, icon, count }) =
                 <View style={styles.listContent}>
                     <View style={styles.listTitle}>
                         {/* channel name */}
-                        <Text style={styles.title} >{name}</Text>
+                        <Text style={styles.title} numberOfLines={1} ellipsizeMode='tail'>{name}</Text>
                     </View>
                     <View style={styles.listData}>
 
@@ -56,7 +56,8 @@ const styles = StyleSheet.create({
     listTitle: {
         flexDirection: 'row',
         justifyContent: 'space-between',
-        alignItems: 'center'
+        alignItems: 'center',
+        maxWidth: 120
     },
     listData: {
         flexDirection: 'row',
