@@ -1,6 +1,6 @@
 import { View, Text, Image, StyleSheet, TouchableOpacity } from 'react-native'
 import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
-// const profileImage = require("../../assets/a.jpg")
+import Foundation from '@expo/vector-icons/Foundation';
 const ListItem = ({ profileImage, name, date, message, icon, count }) => {
     return (
         <TouchableOpacity style={styles.listCard}>
